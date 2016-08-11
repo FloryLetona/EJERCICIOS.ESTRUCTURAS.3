@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+namespace EstructuraCondicionalCompuesta3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            string linea;
+            Console.Write("INGRESE SU ALTURA EN CENTIMETROS:");
+            linea = Console.ReadLine();
+            num = int.Parse(linea);
+            if (num < 150)
+            {
+                Console.Write("ES DE ALTURA BAJA");
+            }
+            else
+            {
+                Console.Write("ES DE ALTURA PROMEDIO");
+            }
+            if (num > 170)
+            	 {
+                Console.Write("ES DE ALTURA SUPERIOR A LA PROMEDIO");
+            }
+            Console.ReadKey();
+        }
+    }
+}
